@@ -4,4 +4,74 @@ campaignTrail_temp.running_mate_json = JSON.parse("[{\"model\": \"campaign_trail
 campaignTrail_temp.opponents_weighted_json = JSON.parse("[{\"election\": 20, \"candidates\": [201, 200, 202, 203]},{\"election\": 16, \"candidates\": [165, 166, 167, 168]},{\"election\": 3, \"candidates\": [16, 17, 18, 19]},{\"election\": 9, \"candidates\": [78, 77, 79, 80]},{\"election\": 15, \"candidates\": [153, 152, 154, 155]},{\"election\": 10, \"candidates\": [91, 92, 93]},{\"election\": 4, \"candidates\": [24, 23, 25]},{\"election\": 11, \"candidates\": [105, 106, 107]},{\"election\": 12, \"candidates\": [116, 117, 118, 119]},{\"election\": 14, \"candidates\": [142, 143, 144, 145]},{\"election\": 5, \"candidates\": [21, 20, 22]},{\"election\": 8, \"candidates\": [68, 67, 69, 70]},{\"election\": 13, \"candidates\": [131, 134, 132, 133]}]");        
 campaignTrail_temp.temp_election_list = [{"id": 10, "year": 1980, "is_premium": 0, "display_year": "1980"}];
 campaignTrail_temp.credits = 'theanswerisme';
-document.getElementById("header").src ="https://i.postimg.cc/Tw36RN1b/0F5EE068-F09C-4BD5-B69C-CE001F761D2A.jpg" 
+document.getElementById("header").src ="https://i.postimg.cc/Tw36RN1b/0F5EE068-F09C-4BD5-B69C-CE001F761D2A.jpg"
+
+RecReading=true
+e = campaignTrail_temp;
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#2b242d";     // deep charcoal (header)
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#4D88C4";   // soft light blue-gray (window background)
+
+document.getElementsByClassName("game_header")[0].style.backgroundColor = 
+    nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+
+$("#game_window")[0].style.backgroundColor = 
+    nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+
+$(".container")[0].style.background =
+  "linear-gradient(180deg, #D56B6B 0%, #B13A3A 45%, #7B2323 100%)";
+
+selectedTheme.text_col="black"
+
+let style = document.createElement('style');
+style.type = 'text/css';
+style.id = 'dynamic-style';
+
+style.innerHTML = `
+.campaign_trail_start_emphasis{
+  background: linear-gradient(180deg, #BF4A4A 0%, #9C3333 100%);
+}
+#state_info h3 {
+  background-color: #B43E3E;
+}
+#state_result h3 {
+  background-color: #B43E3E;
+}
+#overall_result h3 {
+  background-color: #B43E3E;
+}
+#map_footer {
+    padding-top: 3em;
+}
+  .overlay_window h3 {
+    background-color: #4D88C4;
+  }
+  .inner_window_question h3 {
+    background-color: #dbe7f3;
+  }
+  #overall_result_container {
+    background-color: #4D88C4;
+  }
+ #state_result_container {
+   background-color: #4D88C4;
+}
+#map_container {
+  background: #F8F8F8;
+  border-radius: 3px;
+  box-shadow:
+    inset 0 0 4px rgba(0, 0, 0, 0.08),
+    0 0 0 2px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+.overlay_window {
+            height: auto;
+		}
+    #menu_container {
+      background-color: #4D88C4 !important;
+    }
+  a:-webkit-any-link {
+    color: #000000;
+  }
+`;
+
+document.head.appendChild(style);
