@@ -13,7 +13,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12777,
         "fields": {
             "priority": 0,
-            "description": "Just days ago you accepted the Democratic nomination for President — yet here you are, about to have a private meeting with Mo Udall, your chief rival for the nomination, a liberal congressman from Arizona. Udall's campaign was derailed by public acknowledgment of his diagnosis of Parkinson's and by his increasingly liberal policy positions. The meeting comes after a failed attempt to thwart you at the convention. In a few minutes, he'll be walking in toe-to-toe with your aides, carrying page after page of demands. How do you want to handle this?",
+            "description": "Just days ago you accepted the Democratic nomination for President — yet here you are, about to have a private meeting with Mo Udall, your chief rival for the nomination, a liberal congressman from Arizona. Udall's campaign was derailed by public acknowledgment of his diagnosis of Parkinson's and by his increasingly liberal policy positions. The meeting comes after a failed attempt to thwart you at the convention. In a few minutes, he'll be coming in toe-to-toe with his own aides and staff, carrying page after page of demands. How do you want to handle this?",
             "likelihood": 1
         }
     },
