@@ -4,7 +4,16 @@ campaignTrail_temp.questions_json = [
         "pk": 4221,
         "fields": {
             "priority": 0,
-            "description": "The time has finally come... After winning a plurality of delegates and securing the support of several more moderate contenders for the nomination, you now have the nomination locked up. You are on stage at the Democratic National Convention at the Philadelphia Civic Center... What would you like to say to the amassed delegates, the many cameras, and the folks at home?",
+            "description": "The time has finally come... After winning a plurality of delegates and then securing the support of several more moderate contenders for the nomination, you now have a majority and the nomination locked up. You are on stage at the Democratic National Convention at the Philadelphia Civic Center... What would you like to say to the amassed delegates, the many cameras, and the folks at home?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 12777,
+        "fields": {
+            "priority": 0,
+            "description": "Just days ago you accepted the Democratic nomination for President — yet here you are, about to have a private meeting with Mo Udall, your chief rival for the nomination, a liberal congressman from Arizona. Udall's campaign was derailed by public acknowledgment of his diagnosis of Parkinson's and by his increasingly liberal policy positions. The meeting comes after a failed attempt to thwart you at the convention. He comes in toe-to-toe with your aides, carrying page after page of demands. How do you want to handle this?",
             "likelihood": 1
         }
     },
@@ -810,6 +819,14 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 4221,
             "description": "Today marks the start of the great American renewal. All around this country, we see folks struggling to deal with inflation, working folks unable to put food on their kitchen table. I want everyone to hear this: when I'm your President, that stops. The buck stops with me, and I will fight for every single person out there to get a good job and get their dignity back."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 12778,
+        "fields": {
+            "question": 12777,
+            "description": "A meeting? Who agreed to this? Well, I certainly didn't. This fella is electoral poison. There is no way in hell I am giving him the time of day. Isn't having Adlai on the ticket enough for these kooks?"
         }
     }
 ]
@@ -6901,6 +6918,36 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 91,
             "global_multiplier": 0.01
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 12779,
+        "fields": {
+            "answer": 12778,
+            "candidate": 91,
+            "affected_candidate": 91,
+            "global_multiplier": -0.025
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 12780,
+        "fields": {
+            "answer": 12778,
+            "candidate": 91,
+            "affected_candidate": 92,
+            "global_multiplier": -0.03
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 12781,
+        "fields": {
+            "answer": 12778,
+            "candidate": 91,
+            "affected_candidate": 93,
+            "global_multiplier": 0.055
+        }
     }
 ]
 
@@ -7233,6 +7280,56 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 34,
             "issue_score": 0.1,
             "issue_importance": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 12782,
+        "fields": {
+            "answer": 12778,
+            "issue": "32",
+            "issue_score": -0.1,
+            "issue_importance": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 12783,
+        "fields": {
+            "answer": 12778,
+            "issue": 33,
+            "issue_score": -0.1,
+            "issue_importance": 0.75
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 12784,
+        "fields": {
+            "answer": 12778,
+            "issue": 34,
+            "issue_score": -0.2,
+            "issue_importance": 0.75
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 12785,
+        "fields": {
+            "answer": 12778,
+            "issue": 35,
+            "issue_score": -0.125,
+            "issue_importance": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 12786,
+        "fields": {
+            "answer": 12778,
+            "issue": 36,
+            "issue_score": -0.1,
+            "issue_importance": 0.5
         }
     }
 ]
@@ -9151,13 +9248,38 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 91,
             "answer_feedback": "As a millionaire and a former businessman, you weren't someone most people expected to hear such a populist tone from, Lloyd! The crowd goes crazy as, in your steely tone, you pledge yourself to working people in a way that many of your liberal competitors for the nomination had done more forcefully than you. Maybe you've learned something in the long campaign..."
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 12787,
+        "fields": {
+            "answer": 12778,
+            "candidate": 91,
+            "answer_feedback": "This soon makes its way to the press, and what's left of the Udall campaign is completely dismayed at your refusal to even touch base with them. Several prominent aides of the congressman soon come forward and announce their intention to support independent candidate Lowell Weicker instead of you, while Udall stays mum."
+        }
     }
 ]
 
 
 
 campaignTrail_temp.jet_data = [{
-    "cyoa_variables": {}
+    "cyoa_variables": {},
+    "mapping_enabled": false,
+    "mapping_data": {},
+    "cyoa_enabled": false,
+    "cyoa_data": {},
+    "cyoa_variable_effects": {},
+    "cyoa_question_swaps": {},
+    "cyoa_answer_swaps": {},
+    "banner_data": {
+        "canName": "",
+        "canImage": "",
+        "runName": "",
+        "runImage": ""
+    },
+    "banner_enabled": false,
+    "endings_enabled": false,
+    "ending_data": {}
 }
 ]
 
