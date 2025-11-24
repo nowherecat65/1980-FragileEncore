@@ -13,7 +13,7 @@ campaignTrail_temp.questions_json = [
         "pk": 422,
         "fields": {
             "priority": 0,
-            "description": "Despite a few unsubstantiated rumors, you've stuck with current Vice President Walter Mondale, opting not to ditch him for someone else. What can you say about your running mate?",
+            "description": "With the nomination battle so tight and heated, it was widely expected that you'd pick, at the very least, somebody a bit to your left. The speculation was proven right as you announced that Senator Adlai Stevenson III would be your choice. What would you like to say about your choice?",
             "likelihood": 1
         }
     },
@@ -385,7 +385,7 @@ campaignTrail_temp.answers_json = [
         "pk": 3532,
         "fields": {
             "question": 422,
-            "description": "Vice President Mondale is the most qualified person for this job. He has served this country tirelessly and that is what we will do in our second term."
+            "description": "What can I say, besides that Adlai is the best-prepared man for the job? Needless to say, the primary went on for a long time, and I know not everyone is happy about the way the party voted. But I know this is a ticket everybody can get behind."
         }
     },
     {
@@ -801,7 +801,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12765,
         "fields": {
             "question": 4221,
-            "description": "Thank you, thank you to my supporters, thank you to everyone who voted, and thank you to this great country for giving me the opportunity to stand here tonight. I think about my mother tonight, and about my father, and what they would have thought, back when I was a boy, if someone had told them their son would someday be running for President. That's what this country is really about. Opportunity is the ultimate civil right."
+            "description": "Thank you, thank you to my supporters, thank you to everyone who voted, and thank you to this great country for giving me the opportunity to stand here tonight. I think about my mother tonight, and about my father, what they'd think if they knew their son would someday be running for President. That's what this country is really about. Opportunity is the ultimate civil right."
         }
     },
     {
@@ -6891,6 +6891,16 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 91,
             "global_multiplier": 0.05
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 12775,
+        "fields": {
+            "answer": 3532,
+            "candidate": 91,
+            "affected_candidate": 91,
+            "global_multiplier": 0.01
+        }
     }
 ]
 
@@ -7007,42 +7017,12 @@ campaignTrail_temp.answer_score_issue_json = [
     },
     {
         "model": "campaign_trail.answer_score_issue",
-        "pk": 1076,
-        "fields": {
-            "answer": 3532,
-            "issue": 33,
-            "issue_score": 0.333,
-            "issue_importance": 2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 1077,
-        "fields": {
-            "answer": 3532,
-            "issue": 34,
-            "issue_score": 0.333,
-            "issue_importance": 2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 1078,
-        "fields": {
-            "answer": 3532,
-            "issue": 35,
-            "issue_score": 0.333,
-            "issue_importance": 2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
         "pk": 1079,
         "fields": {
             "answer": 3532,
-            "issue": 36,
-            "issue_score": 0.333,
-            "issue_importance": 2
+            "issue": 33,
+            "issue_score": 0.1,
+            "issue_importance": 0.5
         }
     },
     {
@@ -7388,17 +7368,6 @@ campaignTrail_temp.answer_score_state_json = [
             "candidate": 91,
             "affected_candidate": 91,
             "state_multiplier": -0.08
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12312,
-        "fields": {
-            "answer": 3532,
-            "state": 254,
-            "candidate": 91,
-            "affected_candidate": 91,
-            "state_multiplier": 0.005
         }
     },
     {
@@ -7917,6 +7886,17 @@ campaignTrail_temp.answer_score_state_json = [
             "affected_candidate": 92,
             "state_multiplier": 0.01
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 12776,
+        "fields": {
+            "answer": 3532,
+            "state": 244,
+            "candidate": 91,
+            "affected_candidate": 91,
+            "state_multiplier": 0.005
+        }
     }
 ]
 
@@ -8116,7 +8096,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 3532,
             "candidate": 91,
-            "answer_feedback": "Walter Mondale is highly experienced. Many are happy to see you highlight his qualifications."
+            "answer_feedback": "You're saying the quiet part out loud, Lloyd! But it's true: Senator Stevenson, a fairly liberal northerner, balanced the ticket nicely without seeming like a mishmash of different ideologies. Let's just hope you can pull this thing off."
         }
     },
     {
