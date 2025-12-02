@@ -31,7 +31,7 @@ campaignTrail_temp.questions_json = [
         "pk": 415,
         "fields": {
             "priority": 1,
-            "description": "What will be your overall campaign strategy this year?",
+            "description": "The Republican Primaries have gone and went, and your chief opponent is Congressman Phil Crane. You expected to face Dole, but this should be easier, given Crane represents Governor Reagan's ideas without any of the charm, doesn't have all that much name recognition and you already have a lead on him. What will you say?",
             "likelihood": 1
         }
     },
@@ -250,7 +250,7 @@ campaignTrail_temp.answers_json = [
         "pk": 3509,
         "fields": {
             "question": 415,
-            "description": "I think it is important that we stress our major successes in office while we campaign. Accomplishments like SALT II, creating the Department of Education and the return of the Panama canal are some of the highlights."
+            "description": "You have to look closely. This is a party of dysfuntion. Instead of backing the obvious, uniting choice of a Vice President, they turn to radicals like Phil Crane. America, when the tides get tough don't you think that party and Phil Crane will be quick to make unstable changes?"
         }
     },
     {
@@ -6272,7 +6272,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 3509,
             "candidate": 91,
             "affected_candidate": 91,
-            "global_multiplier": 0.03
+            "global_multiplier": 0.0134
         }
     },
     {
@@ -7033,8 +7033,8 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 1048,
         "fields": {
             "answer": 3509,
-            "issue": 32,
-            "issue_score": 0.8,
+            "issue": 34,
+            "issue_score": 0.2,
             "issue_importance": 3
         }
     },
@@ -8213,7 +8213,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 3509,
             "candidate": 91,
-            "answer_feedback": "Talking about your successes in office is rarely a bad idea."
+            "answer_feedback": "Scathing attack. The GOP's instability since the Watergate scandal is no shock, and President Ford's election victory in 1976 mostly came down to Carter running a bad campaign. Hitting on their disunity is a sure-fire way to get your point across."
         }
     },
     {
