@@ -5402,7 +5402,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 93,
             "state": 238,
-            "state_multiplier": 0.611211989143363463575476
+            "state_multiplier": 0.6112119891433635
         }
     },
     {
@@ -7132,6 +7132,36 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 92,
             "global_multiplier": 0.015
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 12855,
+        "fields": {
+            "answer": 12761,
+            "candidate": 91,
+            "affected_candidate": 93,
+            "global_multiplier": 0.0125
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 12856,
+        "fields": {
+            "answer": 12765,
+            "candidate": 91,
+            "affected_candidate": 93,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 12857,
+        "fields": {
+            "answer": 12770,
+            "candidate": 91,
+            "affected_candidate": 93,
+            "global_multiplier": 0.0025
+        }
     }
 ]
 
@@ -7631,7 +7661,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 12819,
         "fields": {
             "answer": 3509,
-            "issue": "32",
+            "issue": 32,
             "issue_score": 0.125,
             "issue_importance": 1
         }
@@ -7671,7 +7701,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 12836,
         "fields": {
             "answer": 3510,
-            "issue": "32",
+            "issue": 32,
             "issue_score": -0.01,
             "issue_importance": 1
         }
@@ -7711,7 +7741,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 12849,
         "fields": {
             "answer": 12844,
-            "issue": "32",
+            "issue": 32,
             "issue_score": 0.3,
             "issue_importance": 0.5
         }
