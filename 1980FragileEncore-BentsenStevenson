@@ -844,6 +844,14 @@ campaignTrail_temp.answers_json = [
             "question": 12777,
             "description": "The war is over. We're going to need Congressman Udall doing some interviews and going out on the trail on behalf of the ticket, to help get his young supporters to the polls this November. We don't have to implement all of his bullshit, but we can promise it."
         }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 12844,
+        "fields": {
+            "question": 12777,
+            "description": "I am really glad to have this opportunity to meet with a guy, you know, that I really respect. I know that when the news of his diagnosis came, well, it really hurt my heart. Mo Udall is a patriot and an American original."
+        }
     }
 ]
 
@@ -5394,7 +5402,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 93,
             "state": 238,
-            "state_multiplier": 0.49143363463575476
+            "state_multiplier": 0.39143363463575476
         }
     },
     {
@@ -6942,7 +6950,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12778,
             "candidate": 91,
             "affected_candidate": 91,
-            "global_multiplier": -0.025
+            "global_multiplier": -0.031
         }
     },
     {
@@ -6982,7 +6990,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12788,
             "candidate": 91,
             "affected_candidate": 92,
-            "global_multiplier": -0.0175
+            "global_multiplier": 0.0075
         }
     },
     {
@@ -7093,6 +7101,36 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 91,
             "affected_candidate": 92,
             "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 12845,
+        "fields": {
+            "answer": 12844,
+            "candidate": 91,
+            "affected_candidate": 93,
+            "global_multiplier": -0.04
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 12846,
+        "fields": {
+            "answer": 12844,
+            "candidate": 91,
+            "affected_candidate": 91,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 12847,
+        "fields": {
+            "answer": 12844,
+            "candidate": 91,
+            "affected_candidate": 92,
+            "global_multiplier": 0.015
         }
     }
 ]
@@ -7666,6 +7704,56 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 36,
             "issue_score": -0.01,
             "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 12849,
+        "fields": {
+            "answer": 12844,
+            "issue": "32",
+            "issue_score": 0.3,
+            "issue_importance": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 12850,
+        "fields": {
+            "answer": 12844,
+            "issue": 33,
+            "issue_score": 0.3,
+            "issue_importance": 0.75
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 12851,
+        "fields": {
+            "answer": 12844,
+            "issue": 34,
+            "issue_score": 0.325,
+            "issue_importance": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 12852,
+        "fields": {
+            "answer": 12844,
+            "issue": 35,
+            "issue_score": 0.3,
+            "issue_importance": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 12853,
+        "fields": {
+            "answer": 12844,
+            "issue": 36,
+            "issue_score": 0.3,
+            "issue_importance": 0.5
         }
     }
 ]
@@ -8527,6 +8615,17 @@ campaignTrail_temp.answer_score_state_json = [
             "candidate": 91,
             "affected_candidate": 93,
             "state_multiplier": 0.0045
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 12854,
+        "fields": {
+            "answer": 12844,
+            "state": 234,
+            "candidate": 91,
+            "affected_candidate": 91,
+            "state_multiplier": 0.02
         }
     }
 ]
@@ -9808,6 +9907,15 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 12801,
             "candidate": 91,
             "answer_feedback": "Soon, the Udall delegation arrives. You shake the Congressman's hand heartily and wear a chipper smile nearly the entire meeting. His aides push piece after piece of paper across the table, and for nearly every one of them you are able to give a policy or appointment commitment. When it finally ends, you're able to put the smile away. Hopefully this will be enough to satisfy the different strands of the party."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 12848,
+        "fields": {
+            "answer": 12844,
+            "candidate": 91,
+            "answer_feedback": "The meeting eventually comes, you shake his hand, share a few warm moments regarding shared experience on the campaign trail and at the debate you both attended. While you don't necessarily agree with all of the policy planks and commitments that the Congressman wanted, you were very adamant that he and his wing of the party would have a \"seat at the table\" during your potential presidency."
         }
     }
 ]
